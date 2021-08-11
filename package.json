@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "nodemailer": "^6.6.2",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0"
+  },
+  "name": "candles-agora-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "dev": "env DELAY=1000 npx nodemon .",
+    "resetDB": "npx sequelize-cli db:migrate:undo:all && npm run initdev",
+    "initdev": "npm run migrate && npm run seed",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "npx sequelize-cli db:migrate",
+    "seed": "npx sequelize-cli db:seed:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WojciechLisCode/candles-agora-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WojciechLisCode/candles-agora-backend/issues"
+  },
+  "homepage": "https://github.com/WojciechLisCode/candles-agora-backend#readme",
+  "description": ""
+}

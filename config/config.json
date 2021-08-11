@@ -1,0 +1,23 @@
+{
+  "development": {
+    "url": "postgres://ksflxvdc:zSG2ob2CHfvMgD9wN7Fw4YueXk0Olqm0@hattie.db.elephantsql.com/ksflxvdc",
+    "dialect": "postgres",
+    "operatorsAliases": "0"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": "0"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialectOptions": {
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
