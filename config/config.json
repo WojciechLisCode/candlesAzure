@@ -4,20 +4,29 @@
     "password": "Erobos86",
     "database": "postgres",
     "host": "db1woj.postgres.database.azure.com",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": {
+      "encrypt": true
+    }
   },
   "test": {
     "username": "vulpes@db1woj",
     "password": "Erobos86",
     "database": "postgres",
     "host": "db1woj.postgres.database.azure.com",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": {
+      "encrypt": true
+    }
   },
   "production": {
     "username": "vulpes@db1woj",
     "password": "Erobos86",
     "database": "postgres",
     "host": "db1woj.postgres.database.azure.com",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": {
+      "encrypt": true
+    }
   }
 }
